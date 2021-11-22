@@ -1,30 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-
+    <script src="script.js"></script>
 </head>
 <body>
     <h1>SIGN UP FORM</h1>
     <form>
-        <!-- <label for="fname">First name (Format: First character capital letter, rest lower case letters, required)</label>
+        <label for="fname">First name (Format: First character capital letter, rest lower case letters, required)</label>
         <input type="textbox" id="fname" name="fname" pattern="^[A-Z][a-z]+$" required>
         <br>
         <label for="lname">Last name (Format: First character capital letter, rest lower case letters, required)</label>
         <input type="textbox" id="lname" name="lname" pattern="^[A-Z][a-z]+$" required>
         <br>
-        <label for="today">Birthday (required)</label>
-        <input type="date" id="today" name="today" required>
+        <label for="bday">Birthday (required)</label>
+        <input type="date" id="bday" name="bday" required>
         <br>
         <label for="email">Email (Format: Contains @, . in domain, required) </label>
         <input type="email" id="email" name="email" pattern="\S+@\S+\.+\S+" required>
         <br>
         <label for="phone">Phone number (Format: xxxxxxxxxx or xxx-xxx-xxxx or (xxx)xxx-xxxx where x is a number, optional) </label>
         <input type="tel" id="phone" name="phone" pattern="(^\d{10}$|^\(\d{3}\)\d{3}-\d{4}$|^\d{3}-\d{3}-\d{4}$)">
-        <br> -->
-        <label for="pwd">Password (Format: At least 1 capital letter, 1 lower case letter, 1 number, 8 characters long, required)</label>
-        <input type="text" id="pwd" name="pwd" pattern="^((?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])).{8,}" required>
         <br>
-        <button>Submit!</button>
+        <label for="pwd">Password (Format: At least 1 capital letter, 1 lower case letter, 1 number, 8 characters long, required)</label>
+        <input type="password" id="pwd" name="pwd" pattern="^((?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])).{8,}" required>
+        <br>
+        <button onclick="GatherData()">Submit!</button>
     </form>
 </body>
 </html>
