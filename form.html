@@ -16,8 +16,12 @@
         <input type="date" id="bday" name="bday" required><br>
         <label for="email">Email (Format: Contains @, . in domain, required) </label><br>
         <input type="email" id="email" name="email" pattern="\S+@\S+\.+\S+" required><br>
+
+        <!-- regex ensures input has to be EXACTLY xxxxxxxxxx or xxx-xxx-xxxx or (xxx)xxx-xxxx -->
         <label for="phone">Phone number (Format: xxxxxxxxxx or xxx-xxx-xxxx or (xxx)xxx-xxxx where x is a number, optional) </label><br>
         <input type="tel" id="phone" name="phone" pattern="(^\d{10}$|^\(\d{3}\)\d{3}-\d{4}$|^\d{3}-\d{3}-\d{4}$)"><br>
+
+        <!-- got it to work for the previous password requirement -->
         <label for="pwd">Password (Format: At least 1 capital letter, 1 lower case letter, 1 number, 8 characters long, required)</label><br>
         <input type="password" id="pwd" name="pwd" pattern="^((?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])).{8,}" required><br>
         <input type="submit"/>
