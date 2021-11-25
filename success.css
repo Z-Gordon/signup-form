@@ -1,5 +1,6 @@
 body {
     background-image: url("assets/Gates_of_Hell.jpg");
+    background-size: cover;
     font-size: 200%;
     text-align: center;
     color: blue;

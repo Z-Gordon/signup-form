@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <script src="script.js"></script>
     <link rel="stylesheet" href="styles.css" type="text/css">
 </head>
 <body>
     <h2>Create your League of Legends Account:</h2>
     <img src="assets/logo.png" width="350" height="130">
+    </iframe>
     <form action="success.html">
         <label for="fname">First name (Format: First character capital letter, rest lower case letters, required)</label><br>
         <input type="textbox" id="fname" name="fname" pattern="^[A-Z][a-z]+$" required><br>
@@ -16,7 +16,7 @@
         <input type="date" id="bday" name="bday" required><br>
         <label for="email">Email (Format: Contains @, . in domain, required) </label><br>
         <input type="email" id="email" name="email" pattern="\S+@\S+\.+\S+" required><br>
-
+        <iframe width="420" height="345" src="https://www.youtube.com/embed/5znB6BLuies"></iframe><br>
         <!-- regex ensures input has to be EXACTLY xxxxxxxxxx or xxx-xxx-xxxx or (xxx)xxx-xxxx -->
         <label for="phone">Phone number (Format: xxxxxxxxxx or xxx-xxx-xxxx or (xxx)xxx-xxxx where x is a number, optional) </label><br>
         <input type="tel" id="phone" name="phone" pattern="(^\d{10}$|^\(\d{3}\)\d{3}-\d{4}$|^\d{3}-\d{3}-\d{4}$)"><br>
@@ -27,5 +27,6 @@
         <input type="submit"/>
     </form>
     <img src="assets/yasuo.jpg" width="500" height="300">
+    <script src="form.js"></script>
 </body>
 </html>

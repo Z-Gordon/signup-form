@@ -1,7 +1,7 @@
 body {
     background-image: url("assets/Badger-Teemo-Original.jpg");
     background-position: right bottom;
-    background-size: 100%;
+    background-size: cover;
     color: yellow;
     font-size: 130%;
     text-align: center;
