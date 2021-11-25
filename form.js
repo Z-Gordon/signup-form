@@ -1,4 +1,4 @@
-clicksBeforeMsg = 1
+clicksBeforeMsg = 2
 cooldown = 0
 
 function doScam() {
@@ -10,6 +10,7 @@ function doScam() {
     DO NOT PRESS ANY KEY UNLESS YOU ARE INSTRUCTED TO DO SO TOLL FREE 1-800-000-0000`, 
     "* Thank 🙌 you 👈 for using 😏 .T. Mobile 📲 . Your 👉 recent 🕑 purchase 🛒 has got 🉐 you 👉 eligible 😱 for an exclusive 💂 reward 💰 worth 💸 $100 😆😂😅. You 👈 are one ☝🙏🏼 of 10 🔟 randomly 🎲 selected 👇 .T. Mobile 📱 customers 💩 who will receive 😩 this reward 💰. You 😀😬👈 have been rewarded 🎁 a free 🆓 reward 🎁🅱 worth 💰 $100 💯. Just click 🖱 on 🔛🏽 the button 🔘 below 🙆 to claim 🌊 your 🍑👉 reward 💰."]
     alert(msgs[Math.floor(Math.random() * msgs.length)]);
+    cooldown = clicksBeforeMsg;
 }
 
 document.body.addEventListener("click", function (evt) {
