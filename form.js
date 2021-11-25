@@ -1,6 +1,7 @@
 clicksBeforeMsg = 2
 cooldown = 0
 
+// maximum scamming potential while also letting the website be usable
 function doScam() {
     let msgs = [`Critical alert from Microsoft. Your computer has alerted us. Malicious Pornographic Spyware/Riskware Detected Error #xxxxxxxxx Please call us immediately at 1-800-000-0000 Do not ignore this critical alert If you close this page, your computer will be blocked to prevent further damage to our network, and hard drive may possibly be deleted.
     The following information is at risk: 
